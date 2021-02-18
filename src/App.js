@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import TodoFeature from './features/ToDo';
+import AlbumFeature from './features/Album';
 
 function App() {
 
@@ -14,33 +16,12 @@ function App() {
 
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-
-        <p>My name {name}, {age} age</p>
-        <p>
-          Gender:
-          {isMale && (
-            <>
-              <p>Male</p>
-              <p>Not Be De 😇 </p>
-            </>
-          )}
-          {!isMale && 'Female'}
-        </p>
-        <p>Have studied at {info.university} and {info.isLove ? 'Co nguoi yeu roi' : 'Not Lover 😔'}</p>
-
-        <ul>
-          {colors.map(color => (
-            < li style={{ backgroundColor: color, listStyle: 'none' }}>{color}</li>
-          ))}
-        </ul>
-
-
-
-      </header>
+    <div>
+      <h3>Có thể bạn sẽ thích đấy</h3>
+      {/* <TodoFeature /> */}
+      <AlbumFeature />
     </div >
+
   );
 }
 
